@@ -109,6 +109,7 @@ RUN git clone --branch v24.05 --recursive https://github.com/PixarAnimationStudi
     --jobs 10
 
 ENV PATH=$USD_INSTALL_PATH/bin:$PATH
+ENV PYTHONPATH=$USD_INSTALL_PATH/lib/python:$PYTHONPATH
 
 # Clone and build 3D-Info
 RUN git clone --recursive https://gitlab.com/3d-info/3d-info.git && \
