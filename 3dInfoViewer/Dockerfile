@@ -138,4 +138,4 @@ RUN echo 'HISTCONTROL=ignoredups:erasedups' >> /home/docker/.bashrc && \
 USER docker
 
 # Set up entrypoint and command for the application
-ENTRYPOINT ["bash", "/cst_3dinfo/3d-info/build/cst_3dinfo"]
+ENTRYPOINT ["/cst_3dinfo/3d-info/build/cst_3dinfo"]

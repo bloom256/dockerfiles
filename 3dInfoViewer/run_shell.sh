@@ -7,4 +7,5 @@ docker run -it --rm \
 --network host --ipc host \
 -e QT_X11_NO_MITSHM=1 \
 -v /:/hostfs \
-3d_info:dev "/hostfs/$1"
+--entrypoint bash \
+3d_info:dev
