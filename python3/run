@@ -1,0 +1,6 @@
+docker run -it --rm -d --network=host --name anaconda -v /:/hostfs continuumio/anaconda3 /bin/bash -c "\
+    conda install jupyter -y --quiet && \
+    mkdir -p /opt/notebooks && \
+    jupyter notebook \
+    --notebook-dir=/opt/notebooks --ip='*' --port=8888 \
+    --no-browser --allow-root"

@@ -1,0 +1,1 @@
+docker build -t dotnet_6_0:dev .
